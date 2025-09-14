@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <style>
+    body { font-family: sans-serif; padding: 1rem; }
+    h1 { color: #4f46e5; text-align: center; }
+    button { padding: 0.5rem 1rem; margin: 0.5rem; border: none; border-radius: 8px; background:#4f46e5; color:white; }
+  </style>
+</head>
+<body>
+  <h1>Expense Tracker</h1>
+  <p>This is your PWA-ready Expense Tracker shell. The full app code can be inserted here.</p>
+  <button onclick="alert('Demo Add Expense!')">+ Add Expense</button>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</body>
+</html>
